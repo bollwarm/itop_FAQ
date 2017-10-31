@@ -1,15 +1,31 @@
 
 ## itop FAQ 常见问题列表
 
-### itop在线中文文档 http://itop.doc.hardie.me/
+## 官方Wiki（不需要翻墙）
+
+https://wiki.openitop.org/
+里面有详细的文档介绍
+
+比如，调用api进行二次开放
+
+    https://wiki.openitop.org/doku.php?id=2_3_0:advancedtopics:rest_json&s[]=api
+
+个性定制itop
+
+    https://wiki.openitop.org/doku.php?id=2_3_0:customization:start
+
+更多...
+
+### itop在线中文文档 
+
+    http://itop.doc.hardie.me/
 
 ### itop 邮件配置
 
 
- /conf/production/config-itop.php 改为（默认为只读，修改为可写，操作完后改只读，210版本后可以直接后台配置）
-
+      /conf/production/config-itop.php 改为（默认为只读，修改为可写，操作完后改只读，210版本后可以直接后台配置）
  
-查找email_transport  修改'email_transport' => 'PHPMail'为： 
+        查找email_transport  修改'email_transport' => 'PHPMail'为： 
 
 	'email_transport' => 'SMTP',
 
