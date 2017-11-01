@@ -1,7 +1,7 @@
 
 ## itop FAQ 常见问题列表
 
-## 官方Wiki（不需要翻墙）
+### 官方Wiki（不需要翻墙）
 
 https://wiki.openitop.org/
 里面有详细的文档介绍
@@ -81,7 +81,22 @@ https://wiki.openitop.org/
 
 直接修改表 priv_urp_profiles
 
+### 用LNMP一键安装包安装itop 2.3.4时候安装不上的问题
 
+经过排查发现主要是安装程序在获取系统路径时候使用_SERVER[“SERVER_NAME”]函数，而该函数获取的是当时
+系统web服务器（nginx）的server_name 值（默认设置为_），导致安装程序的相关js文件不能正常加载，所以安装
+程序不能获取相关配置的参数，导致安装不成功。解决方法：
+
+1、修改相关获取路径的php文件（方法需要懂php，在此忽略）。
+2、修改nginx配置文件，/usr/local/nginx/conf/nginx.conf的server_name值：
+
+    server_name _; 修改为 server_name IP;
+
+IP为你服务器所在ip地址。然后重加载nginx配置即可
+  
+     /usr/local/nginx/sbin/nginx -s reload
+
+  
 
 ### 其他问题，持续增加中...
 
