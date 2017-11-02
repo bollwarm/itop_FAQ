@@ -1,4 +1,3 @@
-
 ## itop FAQ 常见问题列表
 
 ### 官方Wiki（不需要翻墙）
@@ -15,6 +14,12 @@ https://wiki.openitop.org/
     https://wiki.openitop.org/doku.php?id=2_3_0:customization:start
 
 更多...
+
+### itop中文论坛和qq群
+
+ITIL和itop实施中文论坛 http://www.itilxf.com/
+
+qq群 233051696
 
 ### itop在线中文文档 
 
@@ -39,18 +44,25 @@ https://wiki.openitop.org/
 ###  触发器模版
 
 
-     来自 
+
+来自 
+
     itop@xxx.com     
 
-    回复到     
 
-    收件人 
+回复到     
+
+
+收件人 
+
 
     SELECT Person WHERE id= :this->contactid
+
+抄送 
  
     SELECT Person JOIN lnkPersonToTeam AS T ON T.person_id = Person.id WHERE T.team_id = :this->manager_group_id
 
-抄送 
+
     
 
 隐送 
@@ -59,7 +71,7 @@ https://wiki.openitop.org/
 
 主题 
 
-    你的iTop 账户信息     
+     你的iTop 账户信息     
 
 邮件体 
 
@@ -88,6 +100,7 @@ https://wiki.openitop.org/
 程序不能获取相关配置的参数，导致安装不成功。解决方法：
 
 1、修改相关获取路径的php文件（方法需要懂php，在此忽略）。
+
 2、修改nginx配置文件，/usr/local/nginx/conf/nginx.conf的server_name值：
 
     server_name _; 修改为 server_name IP;
