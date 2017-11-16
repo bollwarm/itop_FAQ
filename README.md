@@ -103,32 +103,32 @@ IP为你服务器所在ip地址。然后重加载nginx配置即可
 
 ### 本地可以打开，但是其他机器打不开，或者能打开，但是样式和图片加载不出来。
 
-   主要是`app_root_url`参数设置有问题。
+  主要是`app_root_url`参数设置有问题。
 
       将 'app_root_url' => 'http://localhost/itop/', 
       或者  'app_root_url' => 'http://127.0.0.1/itop/', 
 
-    修改为
+  修改为
 
       'app_root_url' => '/itop/',
 
 ### 邮件自动生成工单：
 
-    注意安装插件时候不同版本对应的版本不同（不兼容）：
+  注意安装插件时候不同版本对应的版本不同（不兼容）：
 
-    itop 2.02以前版本对应的 （ticket-from-email 2.2)[https://wiki.openitop.org/doku.php?id=extensions:ticket_creation_from_emails]
-    itop 2.02以后到itop2.2 版本对应的 （ticket-from-email 2.6.12)[https://wiki.openitop.org/doku.php?id=extensions:ticket-from-email_2_6_5]
-    itop 2.3以后版本用ticket-from-email 3.0.5)[https://wiki.openitop.org/doku.php?id=extensions:ticket-from-email-v3]
+  itop 2.02以前版本对应的 （ticket-from-email 2.2)[https://wiki.openitop.org/doku.php?id=extensions:ticket_creation_from_emails]
+  itop 2.02以后到itop2.2 版本对应的 （ticket-from-email 2.6.12)[https://wiki.openitop.org/doku.php?id=extensions:ticket-from-email_2_6_5]
+  itop 2.3以后版本用ticket-from-email 3.0.5)[https://wiki.openitop.org/doku.php?id=extensions:ticket-from-email-v3]
     
-    其中安装过程，插件包中3.0版本中两个文件夹对应安装连个插件，安装后在管理工具有个收件箱功能菜单，
-通过他可以在后台配置邮箱等相关数据，很方便，建议使用。而之前版本只对应安装一个插件，没有配置菜单，e
+  其中安装过程，插件包中3.0版本中两个文件夹对应安装连个插件，安装后在管理工具有个收件箱功能菜单，
+通过他可以在后台配置邮箱等相关数据，很方便，建议使用。而之前版本只对应安装一个插件，没有配置菜单，
 只能通过配置文件手动配置。
 
 ### `graphviz`和生成图的问题
 
-    `graphviz` do not found(executable path: /usr/bin/dot)。
+  `graphviz` do not found(executable path: /usr/bin/dot)。
 
-    itop的CI可以根据配置的依赖和影响关系自动生成拓扑图。但是图形生成要依赖`graphviz`软件来生成，`graphviz`如果系统没有的话需要安装。
+  itop的CI可以根据配置的依赖和影响关系自动生成拓扑图。但是图形生成要依赖`graphviz`软件来生成，`graphviz`如果系统没有的话需要安装。
 支持linux和windows的安装，linux下安装可以用包管理软件，比如Centos可以用`yum install graphviz`，安装后为默认的/usr/bin/dot下。如果是
 window下和linux编译安装的话，就在其他目录，这时候就需要配置dot所在路劲。这可以在系统安装中配置，或者安装好后再配置文件设置，比如：
 
