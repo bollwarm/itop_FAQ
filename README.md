@@ -41,6 +41,31 @@ qq群 233051696
 
         'forgot_password_from' => '1000@qq.com',
 
+### 导入导出数据乱码
+
+修改配置文件（ /conf/production/config-itop.php），或者通过后台`管理工具-配置`修改
+
+     'csv_file_default_charset' => 'ISO-8859-1',
+
+修改为
+
+    'csv_file_default_charset' => 'UTF-8',
+
+然后整个过程保证文件编码都是utf8.
+
+### 时间不对，差7个小时
+
+itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（ /conf/production/config-itop.php），
+或者通过后台`管理工具-配置`修改
+
+    'timezone' => 'Europe/Paris',
+
+修改为
+ 
+    'timezone' => 'Asia/Shanghai',
+
+
+
 ###  触发器模版
 
 
