@@ -171,5 +171,9 @@ window下和linux编译安装的话，就在其他目录，这时候就需要配置dot所在路劲。这可以在
 
 
 
+## License
+
+Licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
+
 
 
