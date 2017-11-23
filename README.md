@@ -15,6 +15,12 @@ https://wiki.openitop.org/
 
 更多...
 
+### 个性定制itop中文
+
+笔者自己翻译的版本，现在放到这个文档中
+
+[个性定制itop中文]（个性化定制.md）
+
 ### itop中文论坛和qq群
 
 ITIL和itop实施中文论坛 http://www.itilxf.com/
