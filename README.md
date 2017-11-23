@@ -19,7 +19,7 @@ https://wiki.openitop.org/
 
 笔者自己翻译的版本，现在放到这个文档中
 
-[个性定制itop中文]（个性化定制.md）
+[个性定制itop中文](个性化定制.md)
 
 ### itop中文论坛和qq群
 
