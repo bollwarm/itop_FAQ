@@ -1384,7 +1384,7 @@ Dict::SetEntries('ZH CN', array(
 	'Menu:UserAccountsMenu+' => '用户帐户',
 	'Menu:UserAccountsMenu:Title' => '用户帐户',
 	'UI:iTopVersion:Short' => 'iTop-CN 版本 %1$s',
-	'UI:iTopVersion:Long' => 'iTop-CN 版本 %1$s-%2$s 建立在 %3$s by Purple_Grape',
+	'UI:iTopVersion:Long' => 'iTop-CN 版本 %1$s-%2$s-%3$s',
 	'UI:PropertiesTab' => '属性',
 	'UI:OpenDocumentInNewWindow_' => '在新窗口打开文档: %1$s',
 	'UI:DownloadDocument_' => '下载该文档: %1$s',
