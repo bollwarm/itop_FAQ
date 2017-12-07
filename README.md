@@ -61,7 +61,7 @@ qq群 233051696
 
 ### 时间不对，差7个小时
 
-itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（ /conf/production/config-itop.php），
+itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（/conf/production/config-itop.php），
 或者通过后台`管理工具-配置`修改
 
     'timezone' => 'Europe/Paris',
@@ -73,8 +73,6 @@ itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（ /conf/production/config-
 
 
 ###  触发器模版
-
-
 
 来自 
 
@@ -111,6 +109,13 @@ itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（ /conf/production/config-
      <pre>请登录后更改密码！本邮件为系统自动邮件，请勿回复，任何问题与建议请联系xxx</pre> 
 
      <pre>xxx公司iTop</pre> 
+
+### 最新2.4版本汉化
+
+最新版本还没有汉化包，官方汉化文件还是老早之前的，严重不全，可以用[2.34版本汉化文件](zh-cn.dict.php)
+覆盖新安装的2.4版本的文件，即可。需要覆盖的文件是（注意备份）：
+
+    env-production\dictionaries\zh-cn.dict.php
 
 ### profile 角色用户描述翻译
 
