@@ -13,7 +13,7 @@ https://wiki.openitop.org/
 
     https://wiki.openitop.org/doku.php?id=2_3_0:customization:start
 
-插件下载
+扩展插件下载
   
     https://wiki.openitop.org/doku.php?id=extensions:start
 
@@ -37,19 +37,15 @@ qq群 233051696
 
 ### itop 邮件配置
 
-
-      /conf/production/config-itop.php 改为（默认为只读，修改为可写，操作完后改只读，210版本后可以直接后台配置）
+/conf/production/config-itop.php 改为（默认为只读，修改为可写，操作完后改只读，210版本后可以直接后台配置）
  
-        查找email_transport  修改'email_transport' => 'PHPMail'为： 
+查找email_transport  修改'email_transport' => 'PHPMail'为： 
 
 	'email_transport' => 'SMTP',
-
 	'email_transport_smtp.host' => 'smtp.qq.com',
 	'email_transport_smtp.password' => 'sbmht',
-
 	'email_transport_smtp.username' => '1000@qq.com',
-
-        'forgot_password_from' => '1000@qq.com',
+  'forgot_password_from' => '1000@qq.com',
 
 ### 导入导出数据乱码
 
