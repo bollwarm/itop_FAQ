@@ -13,7 +13,11 @@ https://wiki.openitop.org/
 
     https://wiki.openitop.org/doku.php?id=2_3_0:customization:start
 
-更多...
+插件下载
+  
+    https://wiki.openitop.org/doku.php?id=extensions:start
+
+[更多...](https://wiki.openitop.org)
 
 ### 个性定制itop中文
 
