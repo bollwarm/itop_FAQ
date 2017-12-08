@@ -41,11 +41,11 @@ qq群 233051696
  
 查找email_transport  修改'email_transport' => 'PHPMail'为： 
 
-	'email_transport' => 'SMTP',
-	'email_transport_smtp.host' => 'smtp.qq.com',
-	'email_transport_smtp.password' => 'sbmht',
-	'email_transport_smtp.username' => '1000@qq.com',
-  'forgot_password_from' => '1000@qq.com',
+	  'email_transport' => 'SMTP',
+	  'email_transport_smtp.host' => 'smtp.qq.com',
+	  'email_transport_smtp.password' => 'sbmht',
+	  'email_transport_smtp.username' => '1000@qq.com',
+    'forgot_password_from' => '1000@qq.com',
 
 ### 导入导出数据乱码
 
