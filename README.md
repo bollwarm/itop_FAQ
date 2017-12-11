@@ -51,6 +51,8 @@ qq群 233051696
 鉴于smtp传输文件是明码传输，容易被人监听内容，不安全。同时某些运营商如果阿里云是禁止25端口，用普通SMTP协议根本发送不了邮件
 我推荐使用ssl/tls证书加密的邮件，加密协议配置如下：
 
+
+        'email_transport' => 'SMTP',
         'email_transport_smtp.encryption'=> 'tls',
         'email_transport_smtp.port ' => 465,
         'email_transport_smtp.host' => 'smtp.qq.com',
