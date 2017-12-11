@@ -39,17 +39,17 @@ qq群 233051696
 
 /conf/production/config-itop.php 改为（默认为只读，修改为可写，操作完后改只读，210版本后可以直接后台配置）
  
-查找email_transport  修改'email_transport' => 'PHPMail'为（注意qq邮箱需要去qq web邮箱管理授权smtp访问，授权时候会设置一个密码
+查找email_transport  修改'email_transport' => 'PHPMail'为（注意qq邮箱需要去qq web邮箱管理授权SMTP访问，授权时候会设置一个密码
 一下配置的密码为授权smtp访问时候设置的面）： 
 
 	  'email_transport' => 'SMTP',
 	  'email_transport_smtp.host' => 'smtp.qq.com',
 	  'email_transport_smtp.password' => 'sbmht',
 	  'email_transport_smtp.username' => '1000@qq.com',
-    'forgot_password_from' => '1000@qq.com',
+      'forgot_password_from' => '1000@qq.com',
 
-鉴于smtp传输文件是明码传输，容易被人监听内容，不安全。同事某些运营商如果阿里云是禁止25端口，用普通smtp协议根本发送不了邮件
-我们推荐使用ssl/tls证书加密的邮件，加密协议配置如下：
+鉴于smtp传输文件是明码传输，容易被人监听内容，不安全。同时某些运营商如果阿里云是禁止25端口，用普通SMTP协议根本发送不了邮件
+我推荐使用ssl/tls证书加密的邮件，加密协议配置如下：
 
         'email_transport_smtp.encryption'=> 'tls',
         'email_transport_smtp.port ' => 465,
