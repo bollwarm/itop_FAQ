@@ -1,6 +1,6 @@
 ## itop FAQ 常见问题列表
 
-### 官方Wiki（不需要翻墙）
+### 1、官方Wiki（不需要翻墙）
 
 https://wiki.openitop.org/
 里面有详细的文档介绍
@@ -19,23 +19,23 @@ https://wiki.openitop.org/
 
 [更多...](https://wiki.openitop.org)
 
-### 个性定制itop中文
+### 2、个性定制itop中文
 
 笔者自己翻译的版本，现在放到这个文档中
 
 [个性定制itop中文](个性化定制.md)
 
-### itop中文论坛和qq群
+### 3、itop中文论坛和qq群
 
 ITIL和itop实施中文论坛 http://www.itilxf.com/
 
 qq群 233051696
 
-### itop在线中文文档 
+### 4、itop在线中文文档 
 
     http://itop.doc.hardie.me/
 
-### itop 邮件配置
+### 5、itop 邮件配置
 
 /conf/production/config-itop.php 改为（默认为只读，修改为可写，操作完后改只读，210版本后可以直接后台配置）
  
@@ -62,7 +62,7 @@ qq群 233051696
 
 >注意启用该功能需要php_openssl模块，通过php.ini 开启该模块，如果没有的话，需要先安装改模块。
 
-### 导入导出数据乱码
+### 6、导入导出数据乱码
 
 修改配置文件（ /conf/production/config-itop.php），或者通过后台`管理工具-配置`修改
 
@@ -74,7 +74,7 @@ qq群 233051696
 
 然后整个过程保证文件编码都是utf8.
 
-### 时间不对，差7个小时
+### 7、时间不对，差7个小时
 
 itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（/conf/production/config-itop.php），
 或者通过后台`管理工具-配置`修改
@@ -85,9 +85,7 @@ itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（
  
     'timezone' => 'Asia/Shanghai',
 
-
-
-###  触发器模版
+###  8、触发器模版
 
 来自 
 
@@ -125,14 +123,15 @@ itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（
 
      <pre>xxx公司iTop</pre> 
 
-### 最新2.4版本汉化
+### 6、最新2.4版本汉化
 
+ITIL先锋论坛和群已经提供了2.4的中文版，可以下载使用
 最新版本还没有汉化包，官方汉化文件还是老早之前的，严重不全，可以用[2.34版本汉化文件压缩包](zh-cn.dict.php.zip)
 解压覆盖新安装的2.4版本的文件，即可。需要覆盖的文件是（注意备份）：
 
     env-production\dictionaries\zh-cn.dict.php
 
-### profile 角色用户描述翻译
+### 7、profile 角色用户描述翻译
 
 直接修改表 priv_urp_profiles
 
@@ -157,15 +156,15 @@ itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（
      (12, 'Portal power user', '在授予其他角色的基础上，可以通过门户来访问所有的事件单');
 
 
-### 用LNMP一键安装包安装itop 2.3.4时候安装不上的问题
+### 8、用LNMP一键安装包安装itop 2.3.4时候安装不上的问题
 
 经过排查发现主要是安装程序在获取系统路径时候使用_SERVER[“SERVER_NAME”]函数，而该函数获取的是当时
 系统web服务器（nginx）的server_name 值（默认设置为_），导致安装程序的相关js文件不能正常加载，所以安装
 程序不能获取相关配置的参数，导致安装不成功。解决方法：
 
-1、修改相关获取路径的php文件（方法需要懂php，在此忽略）。
+1）、修改相关获取路径的php文件（方法需要懂php，在此忽略）。
 
-2、修改nginx配置文件，/usr/local/nginx/conf/nginx.conf的server_name值：
+2）、修改nginx配置文件，/usr/local/nginx/conf/nginx.conf的server_name值：
 
     server_name _; 修改为 server_name IP;
 
@@ -173,7 +172,7 @@ IP为你服务器所在ip地址。然后重加载nginx配置即可
   
      /usr/local/nginx/sbin/nginx -s reload
 
-### 本地可以打开，但是其他机器打不开，或者能打开，但是样式和图片加载不出来。
+### 9、本地可以打开，但是其他机器打不开，或者能打开，但是样式和图片加载不出来。
 
   主要是`app_root_url`参数设置有问题。
 
@@ -184,7 +183,7 @@ IP为你服务器所在ip地址。然后重加载nginx配置即可
 
       'app_root_url' => '/itop/',
 
-### 邮件自动生成工单：
+### 10、邮件自动生成工单：
 
   注意安装插件时候不同版本对应的版本不同（不兼容）：
 
@@ -198,7 +197,7 @@ IP为你服务器所在ip地址。然后重加载nginx配置即可
 通过他可以在后台配置邮箱等相关数据，很方便，建议使用。而之前版本只对应安装一个插件，没有配置菜单，
 只能通过配置文件手动配置。
 
-### `graphviz`和生成图的问题
+### 11、`graphviz`和生成图的问题
 
   `graphviz` do not found(executable path: /usr/bin/dot)。
 
@@ -207,6 +206,10 @@ IP为你服务器所在ip地址。然后重加载nginx配置即可
 window下和linux编译安装的话，就在其他目录，这时候就需要配置dot所在路劲。这可以在系统安装中配置，或者安装好后再配置文件设置，比如：
 
     'graphviz_path' => 'C:\\Program Files\\Graphviz\\bin\\dot.exe',
+
+### 11、itop安卓客户端
+
+有个开源安卓客户端，不过很久已经没有更新了，可以[下载](https://github.com/michael71/ItopEnterprise)尝试。
 
 ### 其他问题，持续增加中...
 
