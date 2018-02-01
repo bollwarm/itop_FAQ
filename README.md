@@ -123,7 +123,7 @@ itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（
 
      <pre>xxx公司iTop</pre> 
 
-### 6、最新2.4版本汉化
+### 9、最新2.4版本汉化
 
 ITIL先锋论坛和群已经提供了2.4的中文版，可以下载使用
 
@@ -132,7 +132,7 @@ ITIL先锋论坛和群已经提供了2.4的中文版，可以下载使用
 
     env-production\dictionaries\zh-cn.dict.php
 
-### 7、profile 角色用户描述翻译
+### 10、profile 角色用户描述翻译
 
 直接修改表 priv_urp_profiles
 
@@ -157,7 +157,7 @@ ITIL先锋论坛和群已经提供了2.4的中文版，可以下载使用
      (12, 'Portal power user', '在授予其他角色的基础上，可以通过门户来访问所有的事件单');
 
 
-### 8、用LNMP一键安装包安装itop 2.3.4时候安装不上的问题
+### 11、用LNMP一键安装包安装itop 2.3.4时候安装不上的问题
 
 经过排查发现主要是安装程序在获取系统路径时候使用_SERVER[“SERVER_NAME”]函数，而该函数获取的是当时
 系统web服务器（nginx）的server_name 值（默认设置为_），导致安装程序的相关js文件不能正常加载，所以安装
@@ -173,7 +173,7 @@ IP为你服务器所在ip地址。然后重加载nginx配置即可
   
      /usr/local/nginx/sbin/nginx -s reload
 
-### 9、本地可以打开，但是其他机器打不开，或者能打开，但是样式和图片加载不出来。
+### 12、本地可以打开，但是其他机器打不开，或者能打开，但是样式和图片加载不出来。
 
   主要是`app_root_url`参数设置有问题。
 
@@ -184,7 +184,7 @@ IP为你服务器所在ip地址。然后重加载nginx配置即可
 
       'app_root_url' => '/itop/',
 
-### 10、邮件自动生成工单：
+### 13、邮件自动生成工单：
 
   注意安装插件时候不同版本对应的版本不同（不兼容）：
 
@@ -198,7 +198,7 @@ IP为你服务器所在ip地址。然后重加载nginx配置即可
 通过他可以在后台配置邮箱等相关数据，很方便，建议使用。而之前版本只对应安装一个插件，没有配置菜单，
 只能通过配置文件手动配置。
 
-### 11、`graphviz`和生成图的问题
+### 14、`graphviz`和生成图的问题
 
   `graphviz` do not found(executable path: /usr/bin/dot)。
 
@@ -208,7 +208,7 @@ window下和linux编译安装的话，就在其他目录，这时候就需要配
 
     'graphviz_path' => 'C:\\Program Files\\Graphviz\\bin\\dot.exe',
 
-### 12、itop安卓客户端
+### 15、itop安卓客户端
 
 有个开源安卓客户端，不过很久已经没有更新了，可以[下载](https://github.com/michael71/ItopEnterprise)尝试。
 
@@ -219,6 +219,5 @@ window下和linux编译安装的话，就在其他目录，这时候就需要配
 ## License
 
 Licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
-
 
 
