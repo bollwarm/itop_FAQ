@@ -216,6 +216,16 @@ window下和linux编译安装的话，就在其他目录，这时候就需要配
 
 有个开源安卓客户端，不过很久已经没有更新了，可以[下载](https://github.com/michael71/ItopEnterprise)尝试。
 
+### 16、汉化版时间控件不能点选的问题
+
+表现使用汉化版时间空间时候点不出时间选择页面，经排查是时间控件汉化时候编码冲突。解决办法：
+
+修改`application`目录下`itopwebpage.class.inc`和`portalwebpage.class.inc`文件:
+
+搜索`if ($sJSLangShort != '"en"')`改为`if ($sJSLangShort == 'NULL')`
+
+itop QQ群（233051696）雨博扬给出解决方法。
+
 ### 其他问题，持续增加中...
 
 
