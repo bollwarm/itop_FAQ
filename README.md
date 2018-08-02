@@ -132,6 +132,8 @@ ITIL先锋论坛和群已经提供了2.4的中文版，可以下载使用
 
     env-production\dictionaries\zh-cn.dict.php
 
+注意新版本有文件缓存，替换文件后，需要清理缓存，方法是清空`data/cache-production`即可。
+
 ### 10、profile 角色用户描述翻译
 
 直接修改表 priv_urp_profiles
