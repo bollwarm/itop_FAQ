@@ -87,25 +87,17 @@ itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（
 
 ###  8、触发器模版
 
-来自 
-
-    itop@xxx.com     
+来自 `itop@xxx.com`     
 
 回复到     
 
-收件人 
+收件人 `SELECT Person WHERE id= :this->contactid`
 
-    SELECT Person WHERE id= :this->contactid
-
-抄送 
- 
-    SELECT Person JOIN lnkPersonToTeam AS T ON T.person_id = Person.id WHERE T.team_id = :this->manager_group_id
+抄送 `SELECT Person JOIN lnkPersonToTeam AS T ON T.person_id = Person.id WHERE T.team_id = :this->manager_group_id`
 
 隐送    
 
-主题 
-
-     你的iTop 账户信息     
+主题 `你的iTop 账户信息`     
 
 邮件体 
 
