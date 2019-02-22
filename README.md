@@ -5,7 +5,7 @@
 https://wiki.openitop.org/
 里面有详细的文档介绍
 
-比如，调用api进行二次开放
+比如，调用api进行二次开发
 
     https://wiki.openitop.org/doku.php?id=2_3_0:advancedtopics:rest_json&s[]=api
 
@@ -17,9 +17,10 @@ https://wiki.openitop.org/
   
     https://wiki.openitop.org/doku.php?id=extensions:start
 
+[itop虚拟化docker容器部署](https://github.com/vbkunin/itop-docker)
+
 [更多...](https://wiki.openitop.org)
 
-[itop虚拟化，docker安全](https://github.com/bollwarm/itop-docker)
 
 ### 2、个性定制itop中文
 
