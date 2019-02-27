@@ -233,9 +233,9 @@ itop QQ群（233051696）雨博扬给出解决方法。
 
 ## 本仓库地址
 
-本仓库托管于[Github](https://github.com/bollwarm/itop_FAQ)和Gitee(https://gitee.com/ijz/itop_FAQ)，信息完善需要大家的参与，欢迎大家提供PR，一起完善。
+本仓库托管于[Github](https://github.com/bollwarm/itop_FAQ)和[Gitee](https://gitee.com/ijz/itop_FAQ)，信息完善需要大家的参与，欢迎大家提供PR，一起完善。
 
-国内用户如果github访问缓慢，或者没法访问时候可以访问Gitee(https://gitee.com/ijz/itop_FAQ)。
+国内用户如果github访问缓慢，或者没法访问时候可以访问[Gitee](https://gitee.com/ijz/itop_FAQ)。
 
 
 
