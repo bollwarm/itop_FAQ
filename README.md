@@ -220,7 +220,7 @@ window下和linux编译安装的话，就在其他目录，这时候就需要配
 
 ### 16、汉化版时间控件不能点选的问题
 
-表现使用汉化版时间空间时候点不出时间选择页面，经排查是时间控件汉化时候编码冲突。解决办法：
+表现使用汉化版时间控件时候点不出时间选择页面，经排查是时间控件汉化时候编码冲突。解决办法：
 
 修改`application`目录下`itopwebpage.class.inc`和`portalwebpage.class.inc`文件:
 
@@ -233,9 +233,9 @@ itop QQ群（233051696）雨博扬给出解决方法。
 
 ## 本仓库地址
 
-本仓库托管于[Github](https://github.com/bollwarm/itop_FAQ)和[Gitee](https://gitee.com/ijz/itop_FAQ)，信息完善需要大家的参与，欢迎大家提供PR，一起完善。
+本仓库托管于[Github](https://github.com/bollwarm/itop_FAQ)和[码云](https://gitee.com/ijz/itop_FAQ)，信息完善需要大家的参与，欢迎大家提供PR，一起完善。
 
-国内用户如果github访问缓慢，或者没法访问时候可以访问[Gitee](https://gitee.com/ijz/itop_FAQ)。
+国内用户如果github访问缓慢，或者没法访问时候可以访问[码云](https://gitee.com/ijz/itop_FAQ)。
 
 
 
