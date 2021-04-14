@@ -1,6 +1,6 @@
 ## itop FAQ 常见问题列表
 
-### 1、官方Wiki（不需要翻墙）
+### 1、官方Wiki
 
 https://wiki.openitop.org/
 里面有详细的文档介绍
@@ -123,11 +123,11 @@ itop默认为巴黎时间，和北京时间插7个小时，修改配置文件（
 ![关键词](key.png)
 
 
-### 9、最新版本汉化
+### 9、最新版本中文翻译
 
 ITIL先锋论坛和群已经提供了2.5的中文版，可以下载使用
 
-最新版本2.7还没有汉化包，官方汉化文件还是老早之前的，严重不全，可以用[2.5版本汉化文件压缩包](zh-cn.dict.php.zip)
+最新版本2.7还没有中文翻译包，官方汉化文件还是老早之前的，严重不全，可以用[2.5版本中文翻译文件压缩包](zh-cn.dict.php.zip)
 解压覆盖新安装的新版本（各个版本都适用）的文件，即可。需要覆盖的文件是（注意备份）：
 
     env-production\dictionaries\zh-cn.dict.php
@@ -142,7 +142,7 @@ ITIL先锋论坛和群已经提供了2.5的中文版，可以下载使用
 
     TRUNCATE `itop_priv_urp_profiles`; 
 
-执行以下SQL生成汉化的数据：
+执行以下SQL生成中文的数据：
 
     INSERT INTO `itop_priv_urp_profiles` (`id`, `name`, `description`) VALUES
      (1, 'Administrator', '可以不受限制操作任何对象'),
@@ -218,9 +218,9 @@ window下和linux编译安装的话，就在其他目录，这时候就需要配
 
 有个开源安卓客户端，不过很久已经没有更新了，可以[下载](https://github.com/michael71/ItopEnterprise)尝试。
 
-### 16、汉化版时间控件不能点选的问题
+### 16、中文版时间控件不能点选的问题
 
-表现使用汉化版时间控件时候点不出时间选择页面，经排查是时间控件汉化时候编码冲突。解决办法：
+表现使用中文版时间控件时候点不出时间选择页面，经排查是时间控件中文补丁时候编码冲突。解决办法：
 
 修改`application`目录下`itopwebpage.class.inc`和`portalwebpage.class.inc`文件:
 
