@@ -7,14 +7,14 @@ https://wiki.openitop.org/
 
 比如，调用api进行二次开发
 
-    https://wiki.openitop.org/doku.php?id=2_3_0:advancedtopics:rest_json&s[]=api
+    https://www.itophub.io/wiki/page?id=latest:advancedtopics:rest_json&s%5B0%5D=api
 
 个性定制itop
 
-    https://wiki.openitop.org/doku.php?id=2_3_0:customization:start
+    https://www.itophub.io/wiki/page?id=latest:customization:start
 
 扩展插件下载
-  
+
     https://wiki.openitop.org/doku.php?id=extensions:start
 
 [itop虚拟化docker容器部署](https://github.com/vbkunin/itop-docker)
